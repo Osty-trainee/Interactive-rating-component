@@ -158,6 +158,10 @@ button {
   background-color: var(--orange);
   color: var(--grey-900);
 }
+#rating-form .rating-label input[type=radio]:focus-visible + span {
+  outline: 2px solid var(--orange);
+  outline-offset: 3px;
+}
 #rating-form .submit-btn {
   width: 100%;
   background-color: var(--orange);
@@ -173,6 +177,10 @@ button {
 }
 #rating-form .submit-btn:active {
   background-color: var(--white);
+}
+#rating-form .submit-btn:focus-visible {
+  outline: 2px solid var(--white);
+  outline-offset: 3px;
 }
 #rating-form .submit-btn.active {
   background-color: var(--white);
@@ -205,8 +213,124 @@ button {
 }
 .thank-you p {
   margin-bottom: 0;
+  max-width: 17.5rem;
 }
 
 .hidden {
   display: none !important;
+}
+
+@media (min-width: 768px) {
+  .card {
+    max-width: 25.75rem;
+    padding: var(--spacing-400) var(--spacing-300);
+  }
+  .card .star-icon {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: var(--spacing-300);
+  }
+  .card .star-icon img {
+    width: var(--spacing-200);
+  }
+  .card h1, .card h2 {
+    font-size: 1, 75rem;
+    line-height: 1.25;
+    font-weight: 700;
+    margin-bottom: var(--spacing-200);
+  }
+  .card p {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    font-weight: 400;
+    margin-bottom: var(--spacing-200);
+  }
+  #rating-form .rating-group {
+    margin-bottom: var(--spacing-400);
+  }
+  #rating-form .rating-label span {
+    width: 3.1875rem;
+    height: 3.1875rem;
+    font-size: var(--spacing-200);
+  }
+  #rating-form .submit-btn {
+    padding: var(--spacing-200) var(--spacing-1700);
+    font-size: 0.875rem;
+    line-height: 1.71;
+    letter-spacing: 0.17px;
+  }
+  .thank-you {
+    padding: var(--spacing-500) var(--spacing-400);
+  }
+  .thank-you .thank-you-img {
+    width: 10.125rem;
+    height: 6.75rem;
+  }
+  .thank-you .result-badge {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    margin-top: var(--spacing-400);
+    margin-bottom: var(--spacing-400);
+  }
+  .thank-you p {
+    margin-bottom: 0;
+    max-width: 21.25rem;
+  }
+}
+@media (min-width: 1100px) {
+  .card {
+    max-width: 25.75rem;
+    padding: var(--spacing-400) var(--spacing-300);
+  }
+  .card .star-icon {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: var(--spacing-300);
+  }
+  .card .star-icon img {
+    width: var(--spacing-200);
+  }
+  .card h1, .card h2 {
+    font-size: 1.75rem;
+    line-height: 1.25;
+    font-weight: 700;
+    margin-bottom: var(--spacing-200);
+  }
+  .card p {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    font-weight: 400;
+    margin-bottom: var(--spacing-200);
+  }
+  #rating-form .rating-group {
+    margin-bottom: var(--spacing-400);
+  }
+  #rating-form .rating-label span {
+    width: 3.1875rem;
+    height: 3.1875rem;
+    font-size: var(--spacing-200);
+  }
+  #rating-form .submit-btn {
+    padding: var(--spacing-200) var(--spacing-1700);
+    font-size: 0.875rem;
+    line-height: 1.71;
+    letter-spacing: 0.17px;
+  }
+  .thank-you {
+    padding: var(--spacing-500) var(--spacing-400);
+  }
+  .thank-you .thank-you-img {
+    width: 10.125rem;
+    height: 6.75rem;
+  }
+  .thank-you .result-badge {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    margin-top: var(--spacing-400);
+    margin-bottom: var(--spacing-400);
+  }
+  .thank-you p {
+    margin-bottom: 0;
+    max-width: 21.25rem;
+  }
 }/*# sourceMappingURL=main.css.map */
