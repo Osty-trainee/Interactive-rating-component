@@ -3,47 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+  <!--Main-->
+  <main class="card-conteiner">
+    <!-- Rating state start -->
+    <div id="rating-state" class="card">
+      <div class="star-icon">
+        <img src="./images/icon-star.svg" alt="orange star icon">
+      </div>
+    
+    <h1>How did we do?</h1>
+    <p>
+      Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!
+    </p>
 
-  <!-- Rating state start -->
+      <form id="rating-form">
+        <div class="rating-group">
+          <label class="rating-label">
+            <input type="radio" name="rating" value="1" required>
+            <span>1</span>
+          </label>
+          <label class="rating-label">
+            <input type="radio" name="rating" value="2">
+            <span>2</span>
+          </label>
+          <label class="rating-label">
+            <input type="radio" name="rating" value="3">
+            <span>3</span>
+          </label>
+          <label class="rating-label">
+            <input type="radio" name="rating" value="4">
+            <span>4</span>
+          </label>
+          <label class="rating-label">
+            <input type="radio" name="rating" value="5">
+            <span>5</span>
+          </label>
+        </div>
 
-  How did we do?
+        <button type="submit" class="submit-btn">SUBMIT</button>
+      </form>
+    </div>
+    <!-- Rating state end -->
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+    <!-- Thank you state start -->
+    <div id="thank-you-state" class="card thank-you hidden">
+      <img src="./images/illustration-thank-you.svg" alt="phone with data exchange for the thank you form">
 
-  1 2 3 4 5
+      <div class="result-badge">
+        You selected <span id="selected-rating">0</span>> out of 5
+      </div>
 
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
+      <h2>Thank you!</h2>
+      <p>
+        We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!
+      </p>
+    </div>
+     <!-- Thank you state end -->
+  </main>
+  <!--Footer-->
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/Osty-trainee">Osty</a>.
   </footer>
 </body>
 </html>
