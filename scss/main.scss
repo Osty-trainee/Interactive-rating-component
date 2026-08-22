@@ -1,0 +1,110 @@
+@import 'fonts';
+@import 'variables';
+@import 'reset';
+
+.card {
+    background-image: radial-gradient(circle at top, var(--gradient-1), var(--gradient-2));
+    max-width: 20.4375rem;
+    width: 100%;
+    padding: var(--spacing-300);
+    border-radius: var(--spacing-200);
+
+    .star-icon {
+        background-color: var(--grey-900);
+        width: var(--spacing-500);
+        height: var(--spacing-500);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: var(--spacing-300);
+
+        img {
+            width: 0.875rem;
+        }
+    }
+
+    h1, h2 {
+        font-size: var(--spacing-300);
+        line-height: 1.25;
+        font-weight: 700;
+        margin-bottom: var(--spacing-300);
+    }
+
+    p {
+        font-size: 0.875rem;
+        line-height: 1.57;
+        font-weight: 400;
+        color: var(--grey-500);
+        margin-bottom: var(--spacing-300);
+    }
+}
+
+#rating-form {
+    display: flex;
+    flex-direction: column;
+
+    .rating-group {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: var(--spacing-300);
+    }
+
+    .rating-label {
+        cursor: pointer;
+
+        input[type="radio"] {
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 2.625rem;
+            height: 2.625rem;
+            border-radius: 50%;
+            background-color: var(--grey-900);
+            color: var(--grey-500);
+            font-weight: 700;
+            font-size: 0.875rem;
+            transition: all 0.3s ease;
+        }
+
+        &:hover span {
+            background-color: var(--white);
+            color: var(--grey-900);
+        }
+
+        input[type="radio"]:checked + span {
+            background-color: var(--orange);
+            color: var(--grey-900);
+        }
+   }
+
+   .submit-btn {
+        width: 100%;
+        background-color: var(--orange);
+        color: var(--grey-950);
+        border: none;
+        padding: var(--spacing-200) var(--spacing-1300);
+        border-radius: 1.4063rem;
+        font-size: 0.875rem;
+        font-weight: 700;
+        line-height: 1.29;
+        letter-spacing: 1.87px;
+        transition: all 0.3s ease;
+
+        &:active {
+            background-color: var(--white);
+        }
+   }
+}
+
+.hidden {
+    display: none !important;
+}
+
